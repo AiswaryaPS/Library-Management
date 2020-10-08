@@ -4,6 +4,21 @@ void gotoxy (int x, int y)
 coord.X = x; coord.Y = y; // X and Y coordinates
 SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
+void main()
+{
+k=Password(password);
+if(k==1)
+{
+mainmenu();
+}
+else
+{
+printf("login unsuccessfull");
+main();
+
+
+}
+//getch();
 void mainmenu()
 {
 //loaderanim();
@@ -60,10 +75,6 @@ gotoxy(16,3);
 printf("\tLibrary Management System");
 gotoxy(16,4);
 printf("\tMini Project in C");
-gotoxy(16,5);
-printf("\tis brought to you by");
-gotoxy(16,7);
-printf("\tCode with C Team");
 gotoxy(16,8);
 printf("******************************************");
 gotoxy(16,10);
@@ -826,5 +837,4 @@ for(loader=1;loader<20;loader++)
 Sleep(100);printf("%c",219);}
 }*/
 //End of program
-
 
