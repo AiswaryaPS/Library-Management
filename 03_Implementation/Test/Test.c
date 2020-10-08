@@ -1,8 +1,8 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#define PROJECT_NAME    "Library Management"
-#include<Library.h>
+ #include<Library.h>
+#define PROJECT_NAME   "Library Management"
 
 void test_login(void);
 
@@ -25,11 +25,8 @@ int main() {
   return 0;
 }
 
-void test_adLogin(void) {
-  CU_ASSERT(1 == login("user","pass"));
-  CU_ASSERT(1 == Login("wrong","wrong"));//dummy fail case
-
-
-
+void test_login(void) {
+  CU_ASSERT(1 == login("pass"));
+  CU_ASSERT(1 == Login("wrong"));//dummy fail case
 }
 
